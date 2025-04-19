@@ -30,6 +30,7 @@
 #include "IR.h"
 #include "HC-SR501.h"
 #include "Beep.h"
+#include "MQ2.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -76,6 +77,7 @@ const osThreadAttr_t BluetoothTask_attributes = {
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 uint16_t ir;
+uint16_t mq2;
 int value = 2;
 /* USER CODE END FunctionPrototypes */
 
@@ -138,15 +140,15 @@ void MX_FREERTOS_Init(void) {
   * @retval None
   */
 /* USER CODE END Header_ChassisTask_callback */
+//温湿度控制
 void ChassisTask_callback(void *argument)
 {
   /* USER CODE BEGIN ChassisTask_callback */
   /* Infinite loop */
   for(;;)
   {
-		    float roll = 1;
-  		
-        OLED_printf(4,0,"roll:%.1f",roll);
+		    
+       
 	      OLED_refresh_gram();
     osDelay(1);
   }
@@ -160,6 +162,7 @@ void ChassisTask_callback(void *argument)
 * @retval None
 */
 /* USER CODE END Header_GimbalTask_callback */
+//烟雾传感器
 void GimbalTask_callback(void *argument)
 {
   /* USER CODE BEGIN GimbalTask_callback */
@@ -167,6 +170,7 @@ void GimbalTask_callback(void *argument)
   for(;;)
   {
 		ir = IR_FireData();
+		mq2 = MQ2_GetData();  
 		if(ir == 0)
 		{
 			OLED_printf(0,0,"normal");
@@ -177,6 +181,10 @@ void GimbalTask_callback(void *argument)
 			OLED_printf(0,0,"warning");
 			BEEP_ON();
 		}
+		
+		OLED_printf(4,0,"mq2:%df",mq2);
+		
+	
 		
     osDelay(1);
   }
@@ -190,6 +198,7 @@ void GimbalTask_callback(void *argument)
 * @retval None
 */
 /* USER CODE END Header_BluetoothTask_callback */
+//紫外线灯
 void BluetoothTask_callback(void *argument)
 {
   /* USER CODE BEGIN BluetoothTask_callback */
@@ -200,10 +209,12 @@ void BluetoothTask_callback(void *argument)
 	  if (value == 1)  // 检测到人体
     {
         OLED_printf(0,2,"people");
+			 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
     }
     else
     {
        OLED_printf(0,2,"none");
+			 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
     }
     osDelay(1);
   }

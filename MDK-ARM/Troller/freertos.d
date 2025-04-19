@@ -47,3 +47,4 @@ troller\freertos.o: ../Hardware/IR.h
 troller\freertos.o: ../Hardware/HC-SR501.h
 troller\freertos.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\math.h
 troller\freertos.o: ../Hardware/Beep.h
+troller\freertos.o: ../Hardware/MQ2.h
