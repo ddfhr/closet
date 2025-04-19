@@ -41,6 +41,7 @@
 "troller\oled.o"
 "troller\ir.o"
 "troller\hc-sr501.o"
+"troller\beep.o"
 "troller\global.o"
 --strict --scatter "Troller\Troller.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

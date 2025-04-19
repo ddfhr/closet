@@ -47,3 +47,4 @@ troller\main.o: ../Hardware/OLED.h
 troller\main.o: ../Hardware/struct_typedef.h
 troller\main.o: ../Hardware/HC-SR501.h
 troller\main.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\math.h
+troller\main.o: ../Hardware/Beep.h

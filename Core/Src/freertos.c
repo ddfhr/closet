@@ -29,6 +29,7 @@
 #include "OLED.h" 
 #include "IR.h"
 #include "HC-SR501.h"
+#include "Beep.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -169,10 +170,12 @@ void GimbalTask_callback(void *argument)
 		if(ir == 0)
 		{
 			OLED_printf(0,0,"normal");
+			BEEP_OFF();
 		}
 		else
 		{
 			OLED_printf(0,0,"warning");
+			BEEP_ON();
 		}
 		
     osDelay(1);

@@ -29,6 +29,7 @@
 #include "IR.h"
 #include "OLED.h" 
 #include "HC-SR501.h"
+#include "Beep.h"
 //#include "bluetooth.h"
 //#include "global.h"
 
@@ -105,6 +106,7 @@ int main(void)
    OLED_init();
 	 IR_Init();
 	 BODY_HW_Init();
+	 BEEP_Init();
 /*开启串口2的接收中断*/
 	//HAL_UART_Receive_IT(&huart2,(uint8_t *)&USART2_NewData,1);
   /* USER CODE END 2 */
