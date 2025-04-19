@@ -1,0 +1,32 @@
+troller\ir.o: ..\Hardware\IR.c
+troller\ir.o: ..\Hardware\IR.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+troller\ir.o: ../Core/Inc/stm32f1xx_hal_conf.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+troller\ir.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+troller\ir.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+troller\ir.o: ../Drivers/CMSIS/Include/core_cm3.h
+troller\ir.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\stdint.h
+troller\ir.o: ../Drivers/CMSIS/Include/cmsis_version.h
+troller\ir.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+troller\ir.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+troller\ir.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+troller\ir.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\stddef.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+troller\ir.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+troller\ir.o: ../Core/Inc/main.h

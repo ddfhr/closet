@@ -33,15 +33,16 @@ troller\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
 troller\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 troller\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 troller\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+troller\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 troller\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 troller\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 troller\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 troller\freertos.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 troller\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 troller\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-troller\freertos.o: ../Hardware/Servo.h
-troller\freertos.o: ../Core/Inc/tim.h
 troller\freertos.o: ../Software/global.h
-troller\freertos.o: ../Software/control.h
-troller\freertos.o: ../Software/chassis_move.h
-troller\freertos.o: ../Software/robot_arm.h
+troller\freertos.o: ../Hardware/OLED.h
+troller\freertos.o: ../Hardware/struct_typedef.h
+troller\freertos.o: ../Hardware/IR.h
+troller\freertos.o: ../Hardware/HC-SR501.h
+troller\freertos.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\math.h

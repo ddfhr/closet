@@ -24,6 +24,7 @@ troller\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
 troller\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 troller\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 troller\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+troller\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 troller\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 troller\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 troller\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
@@ -37,12 +38,12 @@ troller\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 troller\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
 troller\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
 troller\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+troller\main.o: ../Core/Inc/i2c.h
 troller\main.o: ../Core/Inc/tim.h
 troller\main.o: ../Core/Inc/usart.h
 troller\main.o: ../Core/Inc/gpio.h
-troller\main.o: ../Hardware/servo.h
-troller\main.o: ../Hardware/motor.h
-troller\main.o: ../Hardware/bluetooth.h
-troller\main.o: ../Software/chassis_move.h
-troller\main.o: ../Software/global.h
-troller\main.o: ../Software/control.h
+troller\main.o: ../Hardware/IR.h
+troller\main.o: ../Hardware/OLED.h
+troller\main.o: ../Hardware/struct_typedef.h
+troller\main.o: ../Hardware/HC-SR501.h
+troller\main.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\math.h

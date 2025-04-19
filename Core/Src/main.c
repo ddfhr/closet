@@ -19,19 +19,19 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "i2c.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "IR.h"
+#include "OLED.h" 
+#include "HC-SR501.h"
+//#include "bluetooth.h"
+//#include "global.h"
 
-#include "servo.h"
-#include "motor.h"
-#include "bluetooth.h"
-#include "chassis_move.h"
-#include "global.h"
-#include "control.h"
 
 /* USER CODE END Includes */
 
@@ -65,7 +65,7 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-	int8_t bluetooth_key = 0;
+	//int8_t bluetooth_key = 0;
 /* USER CODE END 0 */
 
 /**
@@ -100,16 +100,13 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM3_Init();
   MX_USART2_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  
-	Motor_Init();//马达初始化
-	Servo_Init();//舵机初始化
-	Global_init();//全局状态初始化
-	chassis_move_init();//底盘运动初始化
-
-
+   OLED_init();
+	 IR_Init();
+	 BODY_HW_Init();
 /*开启串口2的接收中断*/
-	HAL_UART_Receive_IT(&huart2,(uint8_t *)&USART2_NewData,1);
+	//HAL_UART_Receive_IT(&huart2,(uint8_t *)&USART2_NewData,1);
   /* USER CODE END 2 */
 
   /* Init scheduler */

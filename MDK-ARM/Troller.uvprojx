@@ -449,6 +449,62 @@
               <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c</FilePath>
             </File>
             <File>
+              <FileName>stm32f1xx_hal_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>1</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <uGnu>2</uGnu>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
               <FileName>stm32f1xx_hal_tim.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c</FilePath>
@@ -497,6 +553,62 @@
               <FileName>freertos.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/freertos.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>1</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <uGnu>2</uGnu>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/i2c.c</FilePath>
               <FileOption>
                 <CommonProperty>
                   <UseCPPCompiler>2</UseCPPCompiler>
@@ -1265,26 +1377,6 @@
           <GroupName>Hardware</GroupName>
           <Files>
             <File>
-              <FileName>Servo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\Servo.c</FilePath>
-            </File>
-            <File>
-              <FileName>Servo.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Hardware\Servo.h</FilePath>
-            </File>
-            <File>
-              <FileName>Motor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\Motor.c</FilePath>
-            </File>
-            <File>
-              <FileName>Motor.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Hardware\Motor.h</FilePath>
-            </File>
-            <File>
               <FileName>bluetooth.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Hardware\bluetooth.c</FilePath>
@@ -1294,31 +1386,66 @@
               <FileType>5</FileType>
               <FilePath>..\Hardware\bluetooth.h</FilePath>
             </File>
+            <File>
+              <FileName>DHT11.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\DHT11.c</FilePath>
+            </File>
+            <File>
+              <FileName>DHT11.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\DHT11.h</FilePath>
+            </File>
+            <File>
+              <FileName>Delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\Delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>Delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\Delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\OLED.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\OLED.h</FilePath>
+            </File>
+            <File>
+              <FileName>struct_typedef.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\struct_typedef.h</FilePath>
+            </File>
+            <File>
+              <FileName>IR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\IR.c</FilePath>
+            </File>
+            <File>
+              <FileName>IR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\IR.h</FilePath>
+            </File>
+            <File>
+              <FileName>HC-SR501.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\HC-SR501.h</FilePath>
+            </File>
+            <File>
+              <FileName>HC-SR501.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\HC-SR501.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Software</GroupName>
           <Files>
-            <File>
-              <FileName>chassis_move.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Software\chassis_move.c</FilePath>
-            </File>
-            <File>
-              <FileName>chassis_move.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Software\chassis_move.h</FilePath>
-            </File>
-            <File>
-              <FileName>control.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Software\control.c</FilePath>
-            </File>
-            <File>
-              <FileName>control.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Software\control.h</FilePath>
-            </File>
             <File>
               <FileName>global.c</FileName>
               <FileType>1</FileType>
@@ -1328,16 +1455,6 @@
               <FileName>global.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Software\global.h</FilePath>
-            </File>
-            <File>
-              <FileName>robot_arm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Software\robot_arm.c</FilePath>
-            </File>
-            <File>
-              <FileName>robot_arm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Software\robot_arm.h</FilePath>
             </File>
           </Files>
         </Group>

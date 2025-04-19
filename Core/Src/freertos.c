@@ -25,11 +25,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "Servo.h"
 #include "global.h"
-#include "control.h"
-#include "chassis_move.h"
-#include "robot_arm.h"
+#include "OLED.h" 
+#include "IR.h"
+#include "HC-SR501.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -75,7 +74,8 @@ const osThreadAttr_t BluetoothTask_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-
+uint16_t ir;
+int value = 2;
 /* USER CODE END FunctionPrototypes */
 
 void ChassisTask_callback(void *argument);
@@ -143,7 +143,10 @@ void ChassisTask_callback(void *argument)
   /* Infinite loop */
   for(;;)
   {
-	chassis_set_speed();
+		    float roll = 1;
+  		
+        OLED_printf(4,0,"roll:%.1f",roll);
+	      OLED_refresh_gram();
     osDelay(1);
   }
   /* USER CODE END ChassisTask_callback */
@@ -162,7 +165,16 @@ void GimbalTask_callback(void *argument)
   /* Infinite loop */
   for(;;)
   {
-		robot_arm_set();
+		ir = IR_FireData();
+		if(ir == 0)
+		{
+			OLED_printf(0,0,"normal");
+		}
+		else
+		{
+			OLED_printf(0,0,"warning");
+		}
+		
     osDelay(1);
   }
   /* USER CODE END GimbalTask_callback */
@@ -181,7 +193,15 @@ void BluetoothTask_callback(void *argument)
   /* Infinite loop */
   for(;;)
   {
-		control_tack();
+		value = BODY_HW_GetData();
+	  if (value == 1)  // ºÏ≤‚µΩ»ÀÃÂ
+    {
+        OLED_printf(0,2,"people");
+    }
+    else
+    {
+       OLED_printf(0,2,"none");
+    }
     osDelay(1);
   }
   /* USER CODE END BluetoothTask_callback */
